@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+}
+body {
+  background: #edf0f1;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #25b99a;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  padding: 15px;
+}
+header input {
+  width: 100%;
+  height: 50px;
+  float: left;
+  padding-right: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: #fff;
+  font-size: 15px;
+  text-indent: 20px;
+}
+header input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+header input::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+header input::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+header input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  border-radius: 25px;
+  background: white;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+header button svg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+}
+
+header button svg .fill {
+  fill: #25b99a;
+}
+ul.todo {
+  margin: 80px 0 0 0;
+  width: 100%;
+  float: left;
+}
+.container {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+ul.todo li {
+  width: 100%;
+  float: left;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.1);
+  margin-bottom: 10px;
+  position: relative;
+  padding-right: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  line-height: 22px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  min-height: 50px;
+}
+
+ul.todo li:last-of-type {
+  margin: 0;
+}
+ul.todo li .buttons {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.todo li .buttons button {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: none;
+  box-shadow: none;
+  appearance: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+ul.todo li .buttons button:last-of-type:before {
+  content: "";
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: #edf0f1;
+}
+ul.todo li .buttons button svg {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -11px 0 0 -11px;
+}
+
+ul.todo li .buttons button.remove svg.fill {
+  color: #c0cecb;
+  transition: color 0.3s;
+}
+ul.todo li .buttons button.remove:hover svg.fill {
+  color: red;
+}
+ul.todo li .buttons button.complete svg.fill {
+  color: #c0cecb;
+  transition: color 0.3s;
+}
+ul.todo li .buttons button.complete:hover svg.fill {
+  color: #25b99a;
+  transition: color 0.3s;
+}
+ul.todo#completed {
+  position: relative;
+  padding: 30px 0 0 0;
+}
+
+ul.todo#completed:before {
+  width: 150px;
+  height: 1px;
+  background: #d8e5e0;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin: 0 0 0 -75px;
+}

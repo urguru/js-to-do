@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>To-Do-List App</title>
+  </head>
+  <body>
+    <header>
+      <input type="text" placeholder="Enter an activity.." id="item" />
+      <button id="add">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="plus"
+          class="fill"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="fill"
+            d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+          ></path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="container">
+      <!-- To do list -->
+      <ul class="todo" id="todo"></ul>
+      <!-- Completed list -->
+      <ul class="todo" id="completed"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
